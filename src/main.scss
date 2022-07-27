@@ -1,0 +1,28 @@
+@import "scss/base/vars";
+@import "scss/base/normalize";
+@import "scss/header";
+@import "scss/content";
+@import "scss/popup";
+//@media only screen and (min-width: 480px) {
+//  @import "layouts/layout_480/index";
+//}
+//
+//@media only screen and (min-width: 568px) {
+//  @import "layouts/layout_568/index";
+//}
+//
+//@media only screen and (min-width: 768px) {
+//  @import "layouts/layout_768/index";
+//}
+//
+@media only screen and (max-width: 940px) {
+  @import "scss/layout940";
+}
+
+@media only screen and (min-width: 1320px) {
+  @import "scss/layout1320";
+}
+
+
+
+

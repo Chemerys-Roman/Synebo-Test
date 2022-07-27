@@ -1,0 +1,10 @@
+@mixin font-m($weight, $size) {
+  font-family: "Montserrat", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
+@mixin font-r($weight, $size) {
+  font-family: "Roboto";
+  font-size: $size;
+  font-weight: $weight;
+}

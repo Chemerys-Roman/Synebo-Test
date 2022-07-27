@@ -1,0 +1,137 @@
+@import "base/mixins";
+a{text-decoration: none}
+.popup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0, 0.5);
+  .popup-body{
+    width: 474px;
+    height: 628px;
+    padding: 32px 0 42px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+    border-radius: 8px;
+    position: relative;
+    .popup__element{
+      &_title{
+        @include font-m(700, 32px);
+        width: 100%;
+        margin-bottom: 14px;
+        padding: 0 32px;
+      }
+      &_regtype{
+        list-style: none;
+        margin: 0;
+        padding-left: 32px;
+        width: 100%;
+        li{
+          display: inline-block;
+          @include font-r(400,16px);
+          padding: 7px 0 15px;
+          color: rgb(107,107,107,1);
+          margin-right: 24px;
+        }
+        .checked{
+          color: black;
+          border-bottom: 2px solid #6E41E2;
+        }
+      }
+      &_social{
+        border-top: 1px solid #FAFAFA;
+        padding: 0 32px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        margin-bottom: 24px;
+        align-items: center;
+        justify-content: space-between;
+        background: #FAFAFA;
+        .social__element_text{
+          @include font-r(400, 13px);
+          flex: 1 1 auto;
+        }
+        .social__element_networks{
+          width: 132px;
+          padding-right: 32px;
+          display: flex;
+          margin-left: 8px;
+          align-items: center;
+          justify-content: space-between;
+          .netwotks__element{
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      &_form{
+        padding: 0 32px;
+        .form__input{
+          box-sizing: border-box;
+          display: block;
+          width: 100%;
+          height: 56px;
+          padding: 16px;
+          box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+          border-radius: 4px;
+          margin-bottom: 20px;
+        }
+        .form__element_policy{
+          width: 24px;
+          height: 24px;
+          margin-right: 12px;
+          background: #FFFFFF;
+          border: 1px solid #D4D4D4;
+          border-radius: 4px;
+          text-align: center;
+          label{
+            @include font-r(400, 16px);
+            a{
+              text-decoration: none;
+              color: #6E41E2;
+            }
+
+          }
+        }
+        button{
+          @include font-r(400, 16px);
+          margin-top: 32px;
+          margin-bottom: 18px;
+          box-sizing: border-box;
+          width: 100%;
+          height: 44px;
+          background-color: #6E41E2;
+          color: white;
+        }
+        }
+
+
+    }
+    .popup__element_signin{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0 32px;
+      margin: 0 auto;
+      color: #6E41E2;
+      @include font-r(400, 16px);
+    }
+  }
+}
+.hide{
+  visibility: hidden;
+}
