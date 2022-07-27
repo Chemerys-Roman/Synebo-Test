@@ -37,8 +37,7 @@ function selectOption(event){
     if(event.target.classList.contains('buttons__button_dropdown')){
         isHidden && dropDownElement.classList.remove('drop')
     } else {
-        if(!isHidden) {dropDownElement.classList.add('drop');
-            console.log(dropDownElement.lastChild)}
+        if(!isHidden) {dropDownElement.classList.add('drop');}
     }
 
     if(event.target.classList.contains('regtype__type')) {

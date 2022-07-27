@@ -529,9 +529,6 @@ body {
   width: 100%;
   height: 100%;
 }
-.main__element_search .search__element_select .select__element_dropdown .checked .option__element_checked {
-  visibility: visible;
-}
 .main__element_search .search__element_select .select__element_buttons {
   position: absolute;
   top: 50%;
@@ -586,6 +583,9 @@ body {
   visibility: hidden;
   z-index: -5;
   transition: visibility 0.5ms 0.5ms ease;
+}
+.main__element_search .search__element_select .drop .dropdown__element_option .checked .option__element_checked {
+  visibility: hidden;
 }
 .main__element_courses {
   list-style: none;
